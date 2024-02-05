@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff90db, #01000c); 
+}
+
+.center-container {
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  padding: 10px;
+  background: #d3edf8;
+  border-radius: 2px;
+  outline: none;
+  color: #444444;
+  border: 1px solid #9da2ff;
+}
+
+input:focus + .placeholder,
+input:not(:placeholder-shown) + .placeholder {
+  top: -10px;
+  background-color: #d3edf8;
+}
+
+.placeholder {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 20px;
+  padding: 0px 5px;
+  color: #00000f;
+  transition: 1s;
+  pointer-events: none;
+}
